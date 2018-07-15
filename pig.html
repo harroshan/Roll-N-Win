@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">    
+    
+    <link rel="stylesheet" href="pig.css">
+    <link rel="stylesheet" href="pig2.css">
+</head>
+<body id="body">
+    <div class="container-fluid p-0">
+        <a href="index.html" class="btn btn-lg btn-light d-block w-25 mx-auto" style="box-shadow:5px 5px 10px cyan;">Home</a>
+        
+        <div class="wrapper clearfix">
+            <div class="player-0-panel me">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+                
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>  
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+                
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll" id="rollme"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+             
+            <div id="scene">
+                <div id="cube">
+                    <img src="Images/dice-1.png" class="image front">
+                    <img src="Images/dice-6.png" class="image back">
+                    <img src="Images/dice-3.png" class="image top">
+                    <img src="Images/dice-4.png" class="image bottom">
+                    <img src="Images/dice-5.png" class="image left">
+                    <img src="Images/dice-2.png" class="image right">
+                </div>
+            </div>
+        </div>
+
+        <div class="card footer">
+            <footer class="card-footer pb-0">
+                <div class="container-fluid down">
+                    <a href="#" ><img src="other/logo-2.png" class="rounded ml-5 foot" height="40px" width="120px"></a>
+                    <p class="text-light" style="font-size:20px;">&copy; All rights for the Kiddo Game | Made by Harroshan</p>
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com" class="mx-2"><i class="fab fa-facebook icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" class="mx-2"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com" class="mx-2"><i class="fab fa-google-plus icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div> 
+    
+        <div class="modal" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="pig.js"></script>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll n Win</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">   
+    
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light my-2 rounded px-5">
+            <!-- <a href="#" class="nav-brand"><img src="other/logo-2.png" class="rounded ml-3 img-fluid logo" height="60px" width="130px"></a> -->
+            <button class="navbar-toggler mr-0" id="toggler" data-toggle="collapse" data-target="#bar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-2">
+                        <a href="pig.html" class="nav-link"><img src="Images/pig.png" height="40px" width="40px"> &nbsp;Pig Game</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="snake.html" class="nav-link"><img src="Images/snake.png" height="40px" width="40px"> &nbsp;Snake</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <content>
+            <div style="display: flex;">
+                <div class="scene">
+                    <div class="object">
+                        <img src="Images/dice-1.png" class="img1 dice" />
+                        <img src="Images/dice-2.png" class="img2 dice" />
+                        <img src="Images/dice-3.png" class="img3 dice" />
+                        <img src="Images/dice-4.png" class="img4 dice" />
+                        <img src="Images/dice-5.png" class="img5 dice" />
+                        <img src="Images/dice-6.png" class="img6 dice" />
+                    </div>
+                </div>
+                <div class="call">
+                    <p class="d-block zoom">Roll n Win</p>
+                    <a href="pig.html" class="btn play">Pig Play</a>
+                    <a href="snake.html" class="btn ml-3 play">Snake Play</a>
+                </div>
+            </div>
+        
+        </content>
+
+
+        <div class="card footer">
+            <footer class="card-footer pb-0">
+                <div class="container-fluid down">
+                    <a href="#"><img src="other/logo-2.png" class="rounded ml-5 img-fluid logo" height="60px" width="130px"></a>
+                    <p class="text-light" style="font-size:20px;">&copy; All rights for the Kiddo Game | Made by Harroshan</p>
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com" class="mx-2"><i class="fab fa-facebook icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" class="mx-2"><i class="fab fa-instagram icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com" class="mx-2"><i class="fab fa-google-plus icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div> 
+        <div class="modal" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
